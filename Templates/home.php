@@ -15,10 +15,14 @@
                     <?=$message?>
                 </div>
             <?php endif;?>
-            <h4 class="text-light">SneakerShop One Sneaker</h4>
-            <p class="text-light"> Fit en gezond zijn is geen vanzelfsprekendheid. We moeten er zelf wat voor doen. Goede, gezonde voeding is hiervoor de basis.
-            Bewegen hoort hier ook bij. Regelmatig bewegen zorgt voor een goede doorbloeding en draagt bij aan ontspanning van lichaam en geest.
-            Sporten is goed voor sterkere spieren en voor de conditie. Sporcenter HealthOne heeft verschillende sportapparaten om mee te kunnen werken aan je conditie.
+            <h5 class="text-light fw-bold">BIJ ONS DRAAIT ALLES OM SNEAKERS!</h5>
+            <p class="text-light">
+                Met meer dan 2500 klanten over de hele wereld is Sneaker One wereldwijd marktleider op het gebied van sportschoenen. Omdat we nauw samenwerken met ultieme topmerken, kunnen we altijd de beste, meest exclusieve productassortimenten aanbieden. Bij Sneaker One leven we voor sneakers, we ademen sneakers, we dromen over sneakers... We denken alleen maar aan sneakers en niets maakt ons gelukkiger dan onze fans constant op de hoogte houden van nieuwe trends.
+                <br>
+                <br>
+                Onze collecties worden al meer dan 30 jaar samengesteld door en voor sneakerfans. Alleen de beste, meest relevante en spannendste producten komen op onze planken en in onze online catalogi terecht. "Als het verkocht wordt bij Sneaker One, dan is het goedgekeurd!" Dit wordt over ons gezegd. Of je nu al jarenlang dol bent op sneakers of gewoon even op zoek bent naar een nieuw paar schoenen; Sneaker One heeft alles wat je nodig hebt. Van top tot teen. Vergeet niet om een kijkje te nemen in ons geweldige assortiment kleding en accessoires! En denk eraan: de meeste van onze producten zijn nergens anders te vinden!
+
+                Blijf op de hoogte en houd je sneaker-lifestyle springlevend met Sneaker One!
             </p><hr class="bg-light">
             <?php
             include_once ('defaults/footer.php');

@@ -1,4 +1,5 @@
 <?php
+require '../Modules/reviews.php';
 require '../Modules/categories.php';
 require '../Modules/product.php';
 require '../Modules/login.php';
@@ -38,6 +39,7 @@ switch ($params[1]) {
     case 'product':
         $id = $params[2];
         $product = getProduct($id);
+        $review = getReviews($id);
         include_once "../Templates/product_info.php";
         break;
 

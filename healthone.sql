@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 01 dec 2022 om 12:52
+-- Gegenereerd op: 14 dec 2022 om 12:30
 -- Serverversie: 10.4.24-MariaDB
 -- PHP-versie: 8.1.6
 
@@ -98,6 +98,14 @@ CREATE TABLE `review` (
   `user_id` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Gegevens worden geëxporteerd voor tabel `review`
+--
+
+INSERT INTO `review` (`id`, `title`, `description`, `rating`, `date`, `time`, `product_id`, `user_id`) VALUES
+(1, 'Comfortabele schoenen', 'Vind deze schoenen goed bij me passen, draag ze dagelijks en vind ze comfortabel genoeg, daarnaast is het dik genoeg voor de winter', '7.8', '2022-12-03', '11:26:41', 19, 1),
+(2, 'Niet voor mij', 'Deze schoenen vind ik te krap voor mij voeten geeft mij niet de comfort die ik graag zou willen, maar houd me voeten wel graag warm', '5.6', '2022-12-10', '13:42:49', 19, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -106,12 +114,21 @@ CREATE TABLE `review` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `firstname` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
+  `fname` varchar(255) NOT NULL,
+  `lname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `user`
+--
+
+INSERT INTO `user` (`id`, `fname`, `lname`, `email`, `password`, `role`) VALUES
+(1, 'Jaap', 'Stam', 'jstam@gmail.com', 'stamajax020', 'user'),
+(2, 'Richard', 'Westerkant', 'richardwest@gmail.com', 'rwest14', 'user'),
+(3, 'Emre', 'Sari', 'esari@gmail.com', 'Mercedes04', 'admin');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -164,13 +181,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT voor een tabel `review`
 --
 ALTER TABLE `review`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Beperkingen voor geëxporteerde tabellen
